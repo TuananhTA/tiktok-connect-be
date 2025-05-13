@@ -9,3 +9,7 @@ services:
     restart: unless-stopped
     environment:
       - SERVER_PORT=8081
+      - TZ=Asia/Ho_Chi_Minh  # ⭐ Thêm múi giờ Việt Nam
+    volumes:
+      - /etc/localtime:/etc/localtime:ro  # ⭐ Đồng bộ thời gian từ host
+      - /etc/timezone:/etc/timezone:ro    # ⭐ Đồng bộ timezone từ host

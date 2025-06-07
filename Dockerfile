@@ -8,7 +8,7 @@ WORKDIR /app
 COPY team-dung-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose the port (ví dụ 8081)
-EXPOSE 8081
+EXPOSE 8080
 
 # Run the application
 ENTRYPOINT ["java", "-jar", "app.jar"]

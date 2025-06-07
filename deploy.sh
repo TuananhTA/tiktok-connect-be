@@ -1,5 +1,3 @@
-#!/bin/bash
-
 echo "🧹 Đang xóa container cũ..."
 docker compose down --volumes --rmi all
 
